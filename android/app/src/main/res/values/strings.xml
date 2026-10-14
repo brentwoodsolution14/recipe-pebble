@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recipe Pebble</string>
+
+    <string name="splash_title">RECIPE PEBBLE</string>
+    <string name="splash_subtitle">YOUR POCKET COOKBOOK</string>
+    <string name="splash_loading">LOADING YOUR RECIPES</string>
+
+    <string name="menu_brand">RECIPE PEBBLE</string>
+    <string name="menu_hero_first">MY</string>
+    <string name="menu_hero_second">COOKBOOK</string>
+    <string name="menu_counts">8 recipes · 2 favourites</string>
+    <string name="menu_filter_all">ALL</string>
+    <string name="menu_filter_favourites">FAVOURITES</string>
+    <string name="menu_stat_recipes">RECIPES</string>
+    <string name="menu_stat_favourites">FAVOURITES</string>
+    <string name="menu_stat_tags">TAGS</string>
+    <string name="menu_empty_title">NO RECIPES YET</string>
+    <string name="menu_empty_body">Write your first one with the button below.</string>
+    <string name="menu_empty_favourites_title">NO FAVOURITES YET</string>
+    <string name="menu_empty_favourites_body">Tick the heart on a recipe to keep it close.</string>
+    <string name="menu_hint">WRITE IT DOWN WHILE IT IS FRESH</string>
+    <string name="menu_cta">START RECIPE</string>
+
+    <string name="game_title">NEW RECIPE</string>
+    <string name="game_stage_one">STEP 1 OF 3 · TITLE AND TAGS</string>
+    <string name="game_stage_two">STEP 2 OF 3 · INGREDIENTS</string>
+    <string name="game_stage_three">STEP 3 OF 3 · METHOD</string>
+    <string name="game_section_title">TITLE AND TAGS</string>
+    <string name="game_section_title_caption">Name the dish and mark how it is eaten</string>
+    <string name="game_section_ingredients">INGREDIENTS</string>
+    <string name="game_section_ingredients_caption">Everything you need within reach</string>
+    <string name="game_section_method">METHOD</string>
+    <string name="game_section_method_caption">One clear move per line</string>
+    <string name="game_name_hint">Recipe name</string>
+    <string name="game_name_error">Give your recipe a name</string>
+    <string name="game_minutes_label">COOKING TIME</string>
+    <string name="game_tags_label">TAGS</string>
+    <string name="game_ingredient_hint">Ingredient</string>
+    <string name="game_amount_hint">Amount</string>
+    <string name="game_add">ADD</string>
+    <string name="game_add_step">ADD STEP</string>
+    <string name="game_step_hint">What happens now</string>
+    <string name="game_warning_ingredients">Add at least one ingredient before moving on</string>
+    <string name="game_warning_steps">Add at least one method step before saving</string>
+    <string name="game_next">NEXT</string>
+    <string name="game_save">SAVE RECIPE</string>
+    <string name="game_back">BACK</string>
+    <string name="game_draft">SAVE AS DRAFT</string>
+    <string name="game_summary">0 INGREDIENTS · 0 STEPS · 25 MIN</string>
+    <string name="game_minus">-</string>
+    <string name="game_plus">+</string>
+
+    <string name="detail_ribbon">RECIPE SAVED</string>
+    <string name="detail_title">RECIPE</string>
+    <string name="detail_meta">25 MIN · 6 INGREDIENTS · 4 STEPS</string>
+    <string name="detail_stat_minutes">MINUTES</string>
+    <string name="detail_stat_items">ITEMS</string>
+    <string name="detail_stat_steps">STEPS</string>
+    <string name="detail_section_ingredients">INGREDIENTS</string>
+    <string name="detail_section_ingredients_caption">Tick them off as you shop</string>
+    <string name="detail_section_method">METHOD</string>
+    <string name="detail_section_method_caption">Follow it from the top</string>
+    <string name="detail_favourite_add">ADD TO FAVOURITES</string>
+    <string name="detail_favourite_on">IN FAVOURITES</string>
+    <string name="detail_delete">DELETE</string>
+    <string name="detail_again">COOK AGAIN</string>
+    <string name="detail_menu">MENU</string>
+
+    <string name="settings_title">SETTINGS</string>
+    <string name="settings_keep_awake">Keep screen awake while cooking</string>
+    <string name="settings_checklist_first">Show ingredient checklist first</string>
+    <string name="settings_larger_text">Larger recipe text</string>
+    <string name="settings_default_time">Default cooking time</string>
+    <string name="settings_default_time_value">25 min</string>
+    <string name="settings_reset">RESET COOKBOOK</string>
+    <string name="settings_close">CLOSE</string>
+
+    <string name="confirm_title">ARE YOU SURE?</string>
+    <string name="confirm_reset_body">The cookbook returns to the eight recipes it shipped with. Anything you wrote is removed.</string>
+    <string name="confirm_delete_body">This recipe leaves the cookbook for good.</string>
+    <string name="confirm_yes">CONFIRM</string>
+    <string name="confirm_no">CANCEL</string>
+
+    <string name="unit_min">min</string>
+    <string name="unit_minutes_long">minutes</string>
+
+    <string name="cd_settings">Open settings</string>
+    <string name="cd_back">Previous screen</string>
+    <string name="cd_close_row">Remove this ingredient</string>
+    <string name="cd_move_up">Move this step up</string>
+    <string name="cd_move_down">Move this step down</string>
+    <string name="cd_favourite">Favourite recipe</string>
+    <string name="cd_recipe_thumb">Recipe illustration</string>
+    <string name="cd_detail_thumb">Dish illustration</string>
+    <string name="cd_empty_art">Empty cookbook illustration</string>
+    <string name="state_selected">selected</string>
+    <string name="state_not_selected">not selected</string>
+    <string name="state_favourite_on">kept in favourites</string>
+    <string name="state_favourite_off">not in favourites</string>
+    <string name="state_checked">in the basket</string>
+    <string name="state_unchecked">still to buy</string>
+    <string name="cd_minutes_up">Increase cooking time</string>
+    <string name="cd_minutes_down">Decrease cooking time</string>
+</resources>

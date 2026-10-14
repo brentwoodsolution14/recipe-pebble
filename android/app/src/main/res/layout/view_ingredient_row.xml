@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/row_check"
+        android:layout_width="@dimen/touch_min"
+        android:layout_height="@dimen/touch_min"
+        android:minWidth="@dimen/touch_min"
+        android:minHeight="@dimen/touch_min"
+        app:buttonTint="@color/teal" />
+
+    <TextView
+        android:id="@+id/row_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.App.Body" />
+
+    <TextView
+        android:id="@+id/row_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/gap_s"
+        android:textAppearance="@style/TextAppearance.App.Caption" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/row_remove"
+        style="@style/Widget.App.Button.IconOnly"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/cd_close_row"
+        app:icon="@drawable/ic_close" />
+
+</merge>

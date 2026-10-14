@@ -1,0 +1,59 @@
+{
+  "assets": [
+    {
+      "name": "icon_1024",
+      "type": "icon",
+      "prompt": "App icon for a recipe notebook app, glossy 3D terracotta cooking pot with a single green herb sprig, centered, warm cream radial gradient background, crisp, no text"
+    },
+    {
+      "name": "bg_splash",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile app background, dark roasted brown rustic kitchen table surface, warm candlelight from above, deep shadows, soft vignette, no text, no UI elements"
+    },
+    {
+      "name": "bg_library",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile app background, warm cream recipe notebook paper texture, faint horizontal rules, subtle fibre grain, very light and low contrast for UI overlay, no text, no UI elements"
+    },
+    {
+      "name": "bg_editor",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile app background, soft blurred warm kitchen counter with linen cloth, muted terracotta and sage tones, low contrast for UI overlay, no text, no UI elements"
+    },
+    {
+      "name": "sprite_bowl",
+      "type": "sprite",
+      "prompt": "One single cute cartoon ceramic bowl of soup with a spoon, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_mortar",
+      "type": "sprite",
+      "prompt": "One single cute cartoon stone mortar and pestle, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_notebook",
+      "type": "sprite",
+      "prompt": "One single cute cartoon closed recipe notebook with a ribbon bookmark, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_herb",
+      "type": "sprite",
+      "prompt": "One single cute cartoon sprig of green basil herb, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_bread",
+      "type": "sprite",
+      "prompt": "One single cute cartoon loaf of rustic bread, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_pepper",
+      "type": "sprite",
+      "prompt": "One single cute cartoon red bell pepper, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_cupcake",
+      "type": "sprite",
+      "prompt": "One single cute cartoon honey cupcake with a cherry on top, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient">
+
+    <ImageView
+        android:id="@+id/splash_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/splash_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/overlay_splash_scrim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/splash_plate"
+        android:layout_width="@dimen/splash_plate"
+        android:layout_height="@dimen/splash_plate"
+        android:background="@drawable/bg_splash_plate"
+        app:layout_constraintBottom_toTopOf="@id/splash_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/splash_sprite"
+        android:layout_width="@dimen/splash_sprite"
+        android:layout_height="@dimen/splash_sprite"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_mortar"
+        app:layout_constraintBottom_toBottomOf="@id/splash_plate"
+        app:layout_constraintEnd_toEndOf="@id/splash_plate"
+        app:layout_constraintStart_toStartOf="@id/splash_plate"
+        app:layout_constraintTop_toTopOf="@id/splash_plate" />
+
+    <View
+        android:id="@+id/steam_one"
+        android:layout_width="@dimen/steam_dot"
+        android:layout_height="@dimen/steam_dot"
+        android:background="@drawable/bg_splash_plate"
+        app:layout_constraintBottom_toTopOf="@id/splash_plate"
+        app:layout_constraintEnd_toStartOf="@id/steam_two"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <View
+        android:id="@+id/steam_two"
+        android:layout_width="@dimen/steam_dot"
+        android:layout_height="@dimen/steam_dot"
+        android:layout_marginStart="@dimen/gap_m"
+        android:layout_marginEnd="@dimen/gap_m"
+        android:background="@drawable/bg_splash_plate"
+        app:layout_constraintBottom_toBottomOf="@id/steam_one"
+        app:layout_constraintEnd_toStartOf="@id/steam_three"
+        app:layout_constraintStart_toEndOf="@id/steam_one"
+        app:layout_constraintTop_toTopOf="@id/steam_one" />
+
+    <View
+        android:id="@+id/steam_three"
+        android:layout_width="@dimen/steam_dot"
+        android:layout_height="@dimen/steam_dot"
+        android:background="@drawable/bg_splash_plate"
+        app:layout_constraintBottom_toBottomOf="@id/steam_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/steam_two"
+        app:layout_constraintTop_toTopOf="@id/steam_one" />
+
+    <TextView
+        android:id="@+id/splash_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_xl"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/splash_title"
+        android:textAppearance="@style/TextAppearance.App.Hero"
+        android:textColor="@color/page_cream"
+        app:layout_constraintBottom_toTopOf="@id/splash_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_plate" />
+
+    <TextView
+        android:id="@+id/splash_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_m"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:gravity="center"
+        android:letterSpacing="0.22"
+        android:text="@string/splash_subtitle"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/honey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_title" />
+
+    <View
+        android:id="@+id/splash_rule"
+        android:layout_width="@dimen/rule_width"
+        android:layout_height="@dimen/rule_height"
+        android:layout_marginBottom="@dimen/gap_xl"
+        android:background="@drawable/bg_rule_terracotta"
+        app:layout_constraintBottom_toTopOf="@id/splash_progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/splash_progress"
+        android:layout_width="@dimen/progress_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_l"
+        android:indeterminate="true"
+        app:indicatorColor="@color/terracotta"
+        app:layout_constraintBottom_toTopOf="@id/splash_caption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:trackColor="@color/honey_dim"
+        app:trackCornerRadius="2dp"
+        app:trackThickness="4dp" />
+
+    <TextView
+        android:id="@+id/splash_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:accessibilityLiveRegion="polite"
+        android:letterSpacing="0.16"
+        android:text="@string/splash_loading"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/splash_caption"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

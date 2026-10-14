@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recipe_card"
+    style="@style/Widget.App.Card"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recipe_card_height"
+    android:layout_marginBottom="@dimen/gap_m"
+    android:clickable="true"
+    android:focusable="true"
+    app:rippleColor="@color/terracotta_card_ripple">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/gap_m">
+
+        <ImageView
+            android:id="@+id/recipe_thumb"
+            android:layout_width="@dimen/thumb_size"
+            android:layout_height="@dimen/thumb_size"
+            android:background="@drawable/bg_thumb"
+            android:contentDescription="@string/cd_recipe_thumb"
+            android:padding="@dimen/gap_s"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recipe_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_m"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.App.Title"
+            app:layout_constraintEnd_toStartOf="@id/recipe_favourite"
+            app:layout_constraintStart_toEndOf="@id/recipe_thumb"
+            app:layout_constraintTop_toTopOf="@id/recipe_thumb" />
+
+        <TextView
+            android:id="@+id/recipe_meta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_m"
+            android:layout_marginTop="@dimen/gap_xs"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.App.Caption"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/recipe_favourite"
+            app:layout_constraintStart_toEndOf="@id/recipe_thumb"
+            app:layout_constraintTop_toBottomOf="@id/recipe_name" />
+
+        <LinearLayout
+            android:id="@+id/recipe_tags"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/tag_height"
+            android:layout_marginStart="@dimen/gap_m"
+            android:layout_marginTop="@dimen/gap_s"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@id/recipe_favourite"
+            app:layout_constraintStart_toEndOf="@id/recipe_thumb"
+            app:layout_constraintTop_toBottomOf="@id/recipe_meta">
+
+            <com.recipepebble.book.core.ui.TagChipView
+                android:id="@+id/recipe_tag_one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <com.recipepebble.book.core.ui.TagChipView
+                android:id="@+id/recipe_tag_two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/gap_s" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/recipe_favourite"
+            style="@style/Widget.App.Button.IconOnly"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:contentDescription="@string/cd_favourite"
+            app:icon="@drawable/ic_heart_outline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
